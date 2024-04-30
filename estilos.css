@@ -1,0 +1,32 @@
+/*se requiere aplicar estilo a la pagina index.php*/
+body {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #FF9500;
+    }
+    h1{
+    color: #00539F;
+    text-align: center;
+    font-family:cursive;
+    font-style: italic;
+    }
+    #fondo{
+    border: 5px solid black;
+    }
+    formulario{
+    background-color: blanchedalmond;
+    }
+
+/* aplicar estilos a calendario.php */
+
+.result {
+    color: #333;
+    font-size: 20px;
+}
+
+.error {
+    color: red;
+}
+
+
+
