@@ -5,14 +5,13 @@
       </div>
       <div class="navlinks"><!-- navlinks es un contenedor que contiene los elementos de navegación -->
         <ul id="menulist">
-          <li><a href="#home">home</a> </li>
-          <li><a href="#about">about</a> </li>
-          <li><a href="#rooms">rooms</a> </li>
-          <li><a href="#pages">pages</a> </li>
-          <li><a href="#news">news</a> </li>
-          <li><a href="#contact">contact</a> </li>
+          <li><a href="#home">inicio</a> </li>
+          <li><a href="#about">sobre nosotros</a> </li>
+          <li><a href="#rooms">habitaciones</a> </li>
+          <li><a href="#contact">contactanos</a> </li>
           <li> <i class="fa fa-search"></i> </li>
-          <li> <button class="primary-btn">BOOK NOW</button> </li><!-- primary-btn es una clase que se usa para dar estilo a los botones -->
+          <li> <button class="primary-btn">Iniciar Sesión</button> </li>
+          <li> <button class="primary-btn">Registrarse</button> </li><!-- primary-btn es una clase que se usa para dar estilo a los botones -->
         </ul>
         <span class="fa fa-bars" onclick="menutoggle()"></span> <!-- fa fa-bars es una clase que se usa para mostrar el icon de las barras -->
       </div>

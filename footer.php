@@ -16,11 +16,10 @@
       <div class="box"> <!-- box es un contenedor que contiene los enlaces -->
         <h2>Links</h2>
         <ul>
-          <li>Company History</li>
-          <li>About Us</li>
-          <li>Contact Us</li>
-          <li>Services</li>
-          <li>Privacy Policy</li>
+        <li><a href="#home">inicio</a> </li>
+          <li><a href="#about">sobre nosotros</a> </li>
+          <li><a href="#rooms">habitaciones</a> </li>
+          <li><a href="#contact">contactanos</a> </li>
         </ul>
       </div>
 

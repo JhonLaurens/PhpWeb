@@ -3,6 +3,7 @@
 * { /* este fragmento de código se encarga de que no haya margenes ni rellenos en el body */
   padding: 0;
   margin: 0;
+  margin-top: 10px;
   box-sizing: border-box;
 }
 
@@ -28,6 +29,8 @@ li {
 }
 
 .flex_space {
+  /*fondo de color que contrasta con el fondo de la página*/
+  
   display: flex;
   justify-content: space-between;
 }
@@ -44,11 +47,19 @@ button {
 }
 
 .primary-btn {
-  padding: 15px 40px;
-  background: #7fc142;
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #7fc142; /* Color de fondo original */
   font-weight: bold;
   color: white;
+  transition: 0.5s; /* Transición suave */
+  border: 2px solid #080808; /* Borde sólido */
 }
+
+.primary-btn:hover {
+  background: #669933; /* Nuevo color de fondo al pasar el cursor */
+}
+
 
 .secondary-btn {
   padding: 15px 40px;
@@ -106,10 +117,15 @@ header .navlinks span {
 }
 
 .logo img {
-
+  border: 1px solid #7fc142;
+  border-radius: 50%;
   width: 100px;
-  width: 80px;
-  height: 80px;
+  height: 100px;
+  margin-top: auto;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  box-shadow: 0 0 0 2px #000; /* Borde delineado negro */
 }
 
 .logo-footer {
@@ -145,8 +161,46 @@ header .navlinks span {
 
 
 img[src="images/banner-1.png"] {
-  margin-top: 40px; 
+    margin-top: 10px; 
 }
+
+img[src="images/banner-2.png"] {
+  margin-top: 10px; 
+}
+
+img[src="images/banner-3.png"] {
+  margin-top: 10px; 
+}
+
+.text h1 {
+  font-size: 2.5rem; /* Tamaño base para pantallas grandes */
+}
+
+.text p {
+  font-size: 1rem; /* Tamaño base para el párrafo */
+}
+
+.gallery .owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+}
+
+.owl-item {
+  width: 100%; /* Asegura que el elemento sea responsivo */
+}
+
+
+
+.img img {
+  width: 100%; /* Hace que la imagen sea responsiva */
+  height: auto; /* Mantiene la proporción de aspecto de la imagen */
+}
+
+
 
 @media only screen and (max-width:768px) {
   header ul {
@@ -186,34 +240,42 @@ img[src="images/banner-1.png"] {
 /*--------header---------*/
 /*--------home---------*/
 .home {
-  height: 100vh;
-  color: #fff;
+    height: 100vh;
+    color: #fff;
 }
 
 .home img {
-  width: 100%;
-  height: 100vh;
+    width: 100%;
+    height: 100vh;
 }
 
 .home .text {
-  position: absolute;
-  top: 35%;
-  left: 5%;
+    position: absolute;
+    top: 35%;
+    left: 5%;
 }
 
 .home .text h1 {
-  font-size: 80px;
-  font-family: serif;
-  font-weight: 400;
+    font-size: 80px;
+    font-family: serif;
+    font-weight: 400;
 }
 
 .home p {
-  margin: 20px 0;
+    margin: 10px 0; /* Ajustado a 10px en la parte superior */
 }
 
 .home button {
-  margin-right: 20px;
+    margin-right: 20px;
 }
+
+
+.fa-chevron-right, .fa-chevron-left {
+  color: #333; /* Cambia el color según tus necesidades */
+  font-size: 20px; /* Ajusta el tamaño según tus necesidades */
+}
+
+
 
 .owl-nav .owl-prev,
 .owl-nav .owl-next {
@@ -226,11 +288,15 @@ img[src="images/banner-1.png"] {
 }
 
 .owl-nav .owl-prev {
-  left: 0;
+  left: 0; /* Ajusta al extremo izquierdo */
+  top: 50%; /* Centra verticalmente */
+  transform: translateY(-50%); /* Ajuste fino para centrar exactamente */
 }
 
 .owl-nav .owl-next {
-  right: 0;
+  right: 0; /* Ajusta al extremo derecho */
+  top: 50%; /* Centra verticalmente */
+  transform: translateY(-50%); /* Ajuste fino para centrar exactamente */
 }
 
 /*--------home---------*/
@@ -247,10 +313,15 @@ input {
   width: 100%;
 }
 
+
+
 .book {
+  /*bajar el margen superior*/
+  margin-top: 70px;
   padding: 40px 0;
   background: #282834;
   color: #fff;
+  
 }
 
 h1 {
@@ -311,6 +382,7 @@ h1 {
 
 .about {
   position: relative;
+  margin-top: 1px;
 }
 
 .about .left {
@@ -393,6 +465,8 @@ h1 {
   color: #000;
 }
 
+
+
 .owl-carousel1 .owl-nav .owl-prev,
 .owl-carousel1 .owl-nav .owl-next {
   position: absolute;
@@ -443,6 +517,22 @@ h1 {
   transition: 0.5s;
 }
 
+.gallery .grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.gallery .owl-nav button {
+  margin: 0 10px; /* Ajusta el margen para evitar que los botones se peguen a los bordes */
+}
+
+
+.fa-chevron-right, .fa-chevron-left {
+  color: #333; /* Cambia el color según tus necesidades */
+  font-size: 20px; /* Ajusta el tamaño según tus necesidades */
+}
+
+
+
 .overlay {
   position: absolute;
   top: 35%;
@@ -466,6 +556,7 @@ h1 {
 .overlay h3 {
   margin-top: 20px;
   font-weight: 500;
+  font-size: 16px;
 }
 
 .gallery .items:hover .overlay,
@@ -613,66 +704,14 @@ h1 {
 
 /*--------Customer---------*/
 /*--------news---------*/
-.news {
-  position: relative;
-}
 
-.news i {
-  color: #7fc142;
-  text-transform: capitalize;
-  font-size: 18px;
-}
 
-.news label {
-  margin-top: 12px;
-  margin-right: 20px;
-}
-
-.news .left {
-  padding: 30px 0;
-  width: 65%;
-}
-
-.news .right {
-  width: 35%;
-}
-
-.news img {
-  width: 100%;
-}
-
-.news .items p {
-  padding-top: 20px;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-.news .box {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  padding: 40px 0;
-}
-
-.news .box:nth-child(1) {
-  padding-top: 0;
-}
-
-.news .box:nth-last-child(1) {
-  border-bottom: none;
-}
-
-.news .box img {
-  width: 110px;
-  height: 114px;
-}
-
-.news .stext {
-  padding: 0 0 0 20px;
-}
-
-/*--------news---------*/
-/*--------newsletter---------*/
 .newsletter {
   position: relative;
+  margin-top: 50px; /* Ajustado de 1px a 50px para aumentar el espacio */
 }
+
+
 
 .newsletter .container {
   background: #7fc142;
@@ -707,8 +746,7 @@ h1 {
   text-transform: uppercase;
 }
 
-/*--------newsletter---------*/
-/*--------footer---------*/
+
 footer {
   background: #282834;
   color: #b6b7b9;
@@ -765,7 +803,7 @@ footer label {
 
   .home img {
     width: 100%;
-    height: 50vh;
+    height: auto;
   }
 
   .left, .right {
@@ -781,6 +819,27 @@ footer label {
     flex-direction: column;
   }
 
+ 
+
+  .home .text h1 {
+    font-size: 60px; /* Ajusta el tamaño del texto para pantallas medianas */
+    font-family: serif;
+    font-weight: 400;
+  }
+  
+  .home p {
+    font-size: 14px; /* Ajusta el tamaño del párrafo para pantallas medianas */
+    margin: 15px 0; /* Ajusta los márgenes según sea necesario */
+  }
+
+
+  
+  
+  .home button {
+    margin-right: 10px;
+  }
+
+
   .book .grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -789,8 +848,25 @@ footer label {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .owl-carousel .owl-nav .owl-prev {
-    left: 80%;
+  .owl-carousel .owl-nav {
+    width: 100%; /* Asegura que el contenedor de navegación ocupe todo el ancho */
+    position: absolute; /* Posiciona el contenedor de navegación de forma absoluta */
+    top: 50%; /* Centra verticalmente */
+    transform: translateY(-50%); /* Ajusta la posición vertical para centrar las flechas */
+  }
+  
+  .owl-carousel .owl-prev, .owl-carousel .owl-next {
+    position: absolute; /* Posiciona las flechas de forma absoluta */
+  }
+  
+  .owl-carousel .owl-prev {
+    left: 0; /* Posiciona la flecha izquierda en el extremo izquierdo */
+    z-index: 1000; /* Asegura que la flecha esté sobre otros elementos */
+  }
+  
+  .owl-carousel .owl-next {
+    right: 0; /* Posiciona la flecha derecha en el extremo derecho */
+    z-index: 1000; /* Asegura que la flecha esté sobre otros elementos */
   }
 
   .gallery .owl-nav .owl-prev {
@@ -812,7 +888,14 @@ footer label {
   }
 
   .Customer {
-    height: 60vh;
+    margin-top: 1px;
+    background-image: url("../images/background-2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    width: 100%;
+    color: #fff;
+    text-align: center;
   }
 
   .Customer .container {
@@ -865,5 +948,70 @@ footer label {
 
   footer .grid {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+
+  .container.flex,
+  .book .flex_space {
+    flex-direction: column;
+  }
+  .home .text h1 {
+    font-size: 40px; /* Ajusta el tamaño del texto para pantallas pequeñas */
+    font-family: serif;
+    font-weight: 400;
+  }
+
+  .home p {
+    margin: 10px 0 20px 0; /* Aumenta el margen inferior para crear más espacio */
+  }
+
+  .home button {
+    margin-right: 10px; /* Ajusta el margen derecho para los botones */
+  }
+  .book .grid {
+    grid-template-columns: 1fr; /* Cambia a una sola columna para pantallas pequeñas */
+  }
+  /* Añade aquí más ajustes responsivos según sea necesario */
+}
+
+.item {
+  max-width: 100%; /* Asegura que el elemento no exceda el ancho de la pantalla */
+  padding: 20px; /* Añade algo de espacio alrededor del contenido */
+  
+}
+
+.item i {
+  font-size: 24px; /* Ajusta el tamaño del icono */
+  margin-bottom: 20px; /* Añade espacio debajo del icono */
+}
+
+.item p {
+  font-size: 16px; /* Ajusta el tamaño del texto del párrafo */
+  line-height: 1.6; /* Mejora la legibilidad del texto */
+}
+
+.item h3, .item label {
+  font-size: 20px; /* Ajusta el tamaño del texto para los títulos y etiquetas */
+  margin-top: 20px; /* Añade espacio arriba de los títulos y etiquetas */
+}
+
+/* Media queries para ajustar el diseño en pantallas más pequeñas */
+@media (max-width: 768px) {
+  .item {
+    padding: 10px; /* Reduce el espacio alrededor del contenido */
+  }
+
+  .item i {
+    font-size: 20px; /* Reduce el tamaño del icono */
+  }
+
+  .item p {
+    font-size: 14px; /* Reduce el tamaño del texto del párrafo */
+  }
+
+  .item h3, .item label {
+    font-size: 18px; /* Reduce el tamaño del texto para los títulos y etiquetas */
   }
 }

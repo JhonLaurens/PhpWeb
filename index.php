@@ -1,10 +1,10 @@
-<!--llamar header.php-->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Paradise Hotel</title>
+  <link rel="icon" href="./images/logo.png">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous"
     referrerpolicy="no-referrer" />
@@ -14,7 +14,7 @@
 </head>
 <body>
 
-
+<!--llamar header.php-->
 <?php include 'header.php'; ?>
 
 <main>
@@ -38,42 +38,47 @@
         <div class="item">
           <img src="images/banner-1.png" alt=""> <!-- alt es un atributo que se usa para describir la imagen -->
           <div class="text">
-            <h1>Spend Your Holiday</h1>
-            <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.
+          <h1>Escápate al Paraíso</h1>
+          <p>¡Explora un mundo de lujo y comodidad en nuestro hotel! Reserva ahora y descubre el verdadero significado de la relajación.</p>
+
             </p>
             <div class="flex">
-              <button class="primary-btn">READ MORE</button> <!-- primary-btn es una clase que se usa para dar estilo a los botones -->
-              <button class="secondary-btn">CONTACT US</button> 
+              <button class="primary-btn">DESCUBRE</button> <!-- primary-btn es una clase que se usa para dar estilo a los botones -->
+              <button class="secondary-btn">CONTACTANOS</button> 
             </div>
           </div>
         </div>
         <div class="item"> 
           <img src="images/banner-2.png" alt="">
           <div class="text">
-            <h1>Spend Your Holiday</h1>
-            <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.
-            </p>
+          <h1>Descubre el Lujo</h1>
+          <p>¡Sumérgete en el lujo y la elegancia de nuestro hotel! Reserva tu estancia hoy y vive una experiencia inolvidable.</p>
+
             <div class="flex">
-              <button class="primary-btn">READ MORE</button>
-              <button class="secondary-btn">CONTACT US</button>
+              <button class="primary-btn">DESCUBRE</button>
+              <button class="secondary-btn">CONTACTANOS</button>
             </div>
           </div>
         </div>
         <div class="item">
           <img src="images/banner-3.png" alt="">
           <div class="text">
-            <h1>Spend Your Holiday</h1>
-            <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.
-            </p>
+          <h1>Relájate y Disfruta</h1>
+          <p>¡Haz una pausa en la rutina y déjate mimar en nuestro paraíso! Reserva ahora y vive momentos de pura tranquilidad.</p>
+
             <div class="flex">
-              <button class="primary-btn">READ MORE</button>
-              <button class="secondary-btn">CONTACT US</button>
+              <button class="primary-btn">DESCUBRE</button>
+              <button class="secondary-btn">CONTACTANOS</button>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  
+  
+  
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"
     referrerpolicy="no-referrer"></script> <!-- script que se usa para crear un carrusel -->
@@ -84,6 +89,8 @@
       loop: true,
       margin: 0,
       nav: true,
+      autoplay: true,
+      autoplayTimeout: 5000,
       dots: false,
       navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"], 
       responsive: {
@@ -126,52 +133,77 @@
     <div class="container flex">
       <div class="left">
         <div class="heading">
-          <h1>WELCOME</h1>
-          <h2>ParadiseHotel</h2>
+          <h1>Bienvenido a</h1>
+          <h2>Hotel Paradise</h2>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <button class="primary-btn">ABOUT US</button>
+        <p>¡Bienvenido al lugar donde los sueños se hacen realidad y los momentos se convierten en recuerdos eternos! En ParadiseHotel, estamos comprometidos a brindarte una experiencia inolvidable llena de lujo, comodidad y hospitalidad excepcional. Deja que nuestros paisajes impresionantes y nuestro servicio impecable te guíen hacia una escapada rejuvenecedora y llena de alegría. ¡Tu aventura comienza aquí!</p>
+        <button class="primary-btn">SOBRE NOSOTROS</button>
       </div>
       <div class="right">
         <img src="images/about.png" alt="">
       </div>
     </div>
-  </section>
+</section>
+
 
   <section class="counter top"> <!-- counter es una sección que contiene información sobre el hotel -->
     <div class="container grid">
       <div class="box">
-        <h1>2500</h1>
+        <h1 id="contadorClientes">2500</h1>
         <hr>
-        <span>Customer</span>
+        <span>Clientes</span>
       </div>
+      <script>
+  // Selecciona el elemento por su ID
+  var contadorClientes = document.getElementById('contadorClientes');
+  
+  // Función para incrementar el número de clientes
+  function incrementarClientes() {
+    var numeroActual = parseInt(contadorClientes.innerText);
+    contadorClientes.innerText = numeroActual + 1;
+  }
+  
+  // Establece un temporizador para incrementar el número cada 3 segundos
+  setInterval(incrementarClientes, 3000);
+</script>
       <div class="box">
         <h1>1250</h1>
         <hr>
-        <span>Happy Customer</span>
+        <span>Clientes felices</span>
       </div>
       <div class="box">
         <h1>150</h1>
         <hr>
-        <span>Expert Technicians</span>
+        <span>Personal Experto</span>
       </div>
-      <div class="box">
-        <h1>3550</h1>
-        <hr>
-        <span>Desktop Reaired</span>
-      </div>
-    </div>
+            <div class="box">
+              <h1 id="contador">2600</h1>
+              <hr>
+              <span>Recomendaciones</span>
+            </div>
+          </div>
+      <script>
+        // Selecciona el elemento por su ID
+        var contador = document.getElementById('contador');
+        
+        // Función para incrementar el número
+        function incrementarNumero() {
+          var numeroActual = parseInt(contador.innerText);
+          contador.innerText = numeroActual + 1;
+        }
+        
+        // Establece un temporizador para incrementar el número cada 2 segundos
+        setInterval(incrementarNumero, 5000);
+      </script>
   </section>
 
 
   <section class="rooms"> <!-- rooms es una sección que contiene información sobre las habitaciones -->
     <div class="container top">
       <div class="heading">
-        <h1>EXPOLRE</h1>
-        <h2>Our Rooms</h2>
-        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        </p>
+        <h1>EXPLORA</h1>
+        <h2>Nuestras Habitaciones</h2>
+        <p>¡Bienvenido a tu hogar lejos de casa! Descubre la comodidad y el lujo en cada rincón. Nuestras habitaciones están diseñadas para ofrecerte una experiencia inolvidable. ¡Ven y sumérgete en un mundo de confort y estilo!</p>
       </div>
 
       <div class="content mtop"> <!-- mtop es una clase que se usa para dar margen superior -->
@@ -181,7 +213,7 @@
               <img src="images/room-1.png" alt="">
             </div>
             <div class="text">
-              <h2>Suporior Rooms</h2>
+              <h2>Habitación Matrimonial</h2>
               <div class="rate flex">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -202,7 +234,7 @@
               <img src="images/room-2.png" alt="">
             </div>
             <div class="text">
-              <h2>Suporior Rooms</h2>
+              <h2>Habitación Ejecutiva</h2>
               <div class="rate flex">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -223,7 +255,7 @@
               <img src="images/room-3.png" alt="">
             </div>
             <div class="text">
-              <h2>Suporior Rooms</h2>
+              <h2>Habitación Hogareña</h2>
               <div class="rate flex">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -244,7 +276,7 @@
               <img src="images/room-4.png" alt="">
             </div>
             <div class="text">
-              <h2>Suporior Rooms</h2>
+              <h2>Habitación Tradcional</h2>
               <div class="rate flex">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -265,7 +297,7 @@
               <img src="images/room-5.png" alt="">
             </div>
             <div class="text">
-              <h2>Suporior Rooms</h2>
+              <h2>Habitación Sencilla</h2>
               <div class="rate flex">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -286,7 +318,7 @@
               <img src="images/room-6.png" alt="">
             </div>
             <div class="text">
-              <h2>Suporior Rooms</h2>
+              <h2>Habitación VIP</h2>
               <div class="rate flex">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -307,7 +339,7 @@
               <img src="images/room-7.png" alt="">
             </div>
             <div class="text">
-              <h2>Suporior Rooms</h2>
+              <h2>Habitación Familiar</h2>
               <div class="rate flex">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -328,7 +360,7 @@
               <img src="images/room-8.png" alt="">
             </div>
             <div class="text">
-              <h2>Suporior Rooms</h2>
+              <h2>Habitación Tranquilidad</h2>
               <div class="rate flex">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -554,24 +586,16 @@
       <div class="owl-carousel owl-carousel2 owl-theme">
         <div class="item">
           <i class="fa-solid fa-quote-right"></i>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Con más de una década de experiencia en desarrollo web y diseño, he dedicado mi carrera a crear experiencias digitales excepcionales. Mi pasión por la programación se refleja en cada línea de código que escribo, asegurando la calidad y el rendimiento de cada proyecto en el que trabajo. Soy Jhon Dayron Jaramillo Laurens, y estoy aquí para hacer realidad tus ideas con creatividad y profesionalismo.</p>
           <h3>Jhon Dayron Jaramillo Laurens</h3>
-          <label>Jhon Dayron Jaramillo Laurens</label>
         </div>
+
         <div class="item">
           <i class="fa-solid fa-quote-right"></i>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Como desarrollador web con más de diez años de experiencia, he perfeccionado mi arte en la creación de soluciones digitales innovadoras y de alta calidad. Mi compromiso con la excelencia y la atención al detalle se reflejan en cada proyecto que emprendo. Soy Luis Eduardo Quiñonez, y estoy aquí para superar tus expectativas y proporcionarte una experiencia de usuario excepcional en cada sitio web que construyo.</p>
           <h3>Luis Eduardo Quiñonez</h3>
-          <label>Luis Eduardo Quiñonez</label>
         </div>
-        <div class="item">
-          <i class="fa-solid fa-quote-right"></i>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <h3>Jun Perez</h3>
-          <label>Jun Perez</label>
+        
         </div>
       </div>
     </div>
@@ -598,87 +622,7 @@
 
 
 
-  <section class="news top rooms"> <!-- news es una sección que contiene las noticias del hotel -->
-    <div class="container">
-      <div class="heading">
-        <h1>NEWS</h1>
-        <h2>Our News</h2>
-        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-      </div>
-
-
-      <div class="content flex"> <!-- flex significa que los elementos se distribuyen de manera uniforme en el contenedor -->
-        <div class="left grid2">
-          <div class="items">
-            <div class="image">
-              <img src="images/blog-1.png" alt="">
-            </div>
-            <div class="text">
-              <h2>Finibus bonorum malorm.</h2>
-              <div class="admin flex">
-                <i class="fa fa-user"></i>
-                <label>Admin</label>
-                <i class="fa fa-heart"></i>
-                <label>500</label>
-                <i class="fa fa-comments"></i>
-              </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </div>
-          <div class="items">
-            <div class="image">
-              <img src="images/blog-2.png" alt="">
-            </div>
-            <div class="text">
-              <h2>Finibus bonorum malorm.</h2>
-              <div class="admin flex">
-                <i class="fa fa-user"></i>
-                <label>Admin</label>
-                <i class="fa fa-heart"></i>
-                <label>500</label>
-                <i class="fa fa-comments"></i>
-              </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="right"> <!-- right es un contenedor que contiene las noticias -->
-          <div class="box flex">
-            <div class="img">
-              <img src="images/blog-s1.png" alt="">
-            </div>
-            <div class="stext">
-              <h2>Etiam Vel Nequ</h2>
-              <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.
-              </p>
-            </div>
-          </div>
-          <div class="box flex">
-            <div class="img">
-              <img src="images/blog-s2.png" alt="">
-            </div>
-            <div class="stext">
-              <h2>Etiam Vel Nequ</h2>
-              <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.
-              </p>
-            </div>
-          </div>
-          <div class="box flex">
-            <div class="img">
-              <img src="images/blog-s3.png" alt="">
-            </div>
-            <div class="stext">
-              <h2>Etiam Vel Nequ</h2>
-              <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
+  
 
   <section class="newsletter mtop"> <!-- newsletter es una sección que contiene el formulario de suscripción -->
     <div class="container flex_space">
@@ -688,9 +632,12 @@
     </div>
   </section>
 
-
+ 
+  
 
 </main>
+
+
 
 <!--llamar footer.php-->
 
