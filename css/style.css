@@ -465,12 +465,16 @@ h1 {
   color: #000;
 }
 
+.owl-carousel1 {
+  position: relative;
+}
+
 
 
 .owl-carousel1 .owl-nav .owl-prev,
 .owl-carousel1 .owl-nav .owl-next {
   position: absolute;
-  top: -20%;
+  top: -25%;
   height: 50px;
   width: 50px;
   background: #7fc142 !important;
@@ -482,11 +486,17 @@ h1 {
 }
 
 .owl-carousel1 .owl-nav .owl-prev {
-  left: 90%;
+  position: absolute;
+  left: 0; /* Ajusta al extremo izquierdo */
+  top: -4%; /* Centra verticalmente */
+  transform: translateY(-50%); /* Ajuste fino para centrar exactamente */
 }
 
 .owl-carousel1 .owl-nav .owl-next {
-  right: 0;
+  position: absolute;
+  right: 0; /* Ajusta al extremo derecho */
+  top: -4%; /* Centra verticalmente */
+  transform: translateY(-50%); /* Ajuste fino para centrar exactamente */
 }
 
 /*--------rooms---------*/
@@ -677,6 +687,7 @@ h1 {
 .Customer span {
   font-size: 15px;
 }
+
 
 .owl-carousel2 .owl-dots {
   position: absolute;
