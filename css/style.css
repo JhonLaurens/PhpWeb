@@ -474,7 +474,7 @@ h1 {
 .owl-carousel1 .owl-nav .owl-prev,
 .owl-carousel1 .owl-nav .owl-next {
   position: absolute;
-  top: -25%;
+  top: -4%;
   height: 50px;
   width: 50px;
   background: #7fc142 !important;
@@ -485,19 +485,6 @@ h1 {
   color: #fff;
 }
 
-.owl-carousel1 .owl-nav .owl-prev {
-  position: absolute;
-  left: 0; /* Ajusta al extremo izquierdo */
-  top: -4%; /* Centra verticalmente */
-  transform: translateY(-50%); /* Ajuste fino para centrar exactamente */
-}
-
-.owl-carousel1 .owl-nav .owl-next {
-  position: absolute;
-  right: 0; /* Ajusta al extremo derecho */
-  top: -4%; /* Centra verticalmente */
-  transform: translateY(-50%); /* Ajuste fino para centrar exactamente */
-}
 
 /*--------rooms---------*/
 /*--------gallery---------*/
@@ -688,6 +675,23 @@ h1 {
   font-size: 15px;
 }
 
+.owl-carousel2 {
+  position: relative;
+}
+
+.owl-carousel2 .owl-nav .owl-prev {
+  position: absolute;
+  left: 0; /* Ajusta al extremo izquierdo */
+  top: -4%; /* Disminuye este valor para subir el botón */
+  transform: translateY(-50%); /* Ajuste fino para centrar exactamente */
+}
+
+.owl-carousel2 .owl-nav .owl-next {
+  position: absolute;
+  right: 0; /* Ajusta al extremo derecho */
+  top: -4%; /* Disminuye este valor para subir el botón */
+  transform: translateY(-50%); /* Ajuste fino para centrar exactamente */
+}
 
 .owl-carousel2 .owl-dots {
   position: absolute;

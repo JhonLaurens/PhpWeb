@@ -405,134 +405,137 @@
 
 
   <section class="gallery"> <!-- gallery es una sección que contiene las fotos del hotel -->
-    <div class="container top">
-      <div class="heading">
-        <h1>PHOTOS</h1>
-        <h2>Our Gallery</h2>
-        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+      <div class="container top">
+        <div class="heading">
+          <h1>PHOTOS</h1>
+          <h2>Our Gallery</h2>
+          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        </div>
       </div>
-    </div>
 
-    <div class="content mtop">
-      <div class="owl-carousel owl-carousel1 owl-theme">
-
-        <div class="items">
-          <div class="img">
-            <img src="images/gallery-1.png" alt="">
+      <div class="content mtop">
+        <div class="owl-carousel owl-carousel2 owl-theme">
+          <div class="items">
+            <div class="img">
+              <img src="images/gallery-1.png" alt="">
+            </div>
+            <div class="overlay">
+              <span class="fa fa-plus"> </span>
+              <h3>Photo Title Here.</h3>
+            </div>
           </div>
-          <div class="overlay">
-            <span class="fa fa-plus"> </span>
-            <h3 data-description="Descripción de la imagen 1">Título de la foto aquí</h3>
+          <div class="items">
+            <div class="img">
+              <img src="images/gallery-2.png" alt="">
+            </div>
+            <div class="overlay">
+              <span class="fa fa-plus"> </span>
+              <h3>Photo Title Here.</h3>
+            </div>
+          </div>
+          <div class="items">
+            <div class="img">
+              <img src="images/gallery-3.png" alt="">
+            </div>
+            <div class="overlay">
+              <span class="fa fa-plus"> </span>
+              <h3>Photo Title Here.</h3>
+            </div>
+          </div>
+          <div class="items">
+            <div class="img">
+              <img src="images/gallery-4.png" alt="">
+            </div>
+            <div class="overlay">
+              <span class="fa fa-plus"> </span>
+              <h3>Photo Title Here.</h3>
+            </div>
+          </div>
+          <div class="items">
+            <div class="img">
+              <img src="images/gallery-5.png" alt="">
+            </div>
+            <div class="overlay">
+              <span class="fa fa-plus"> </span>
+              <h3>Photo Title Here.</h3>
+            </div>
+          </div>
+          <div class="items">
+            <div class="img">
+              <img src="images/gallery-6.png" alt="">
+            </div>
+            <div class="overlay">
+              <span class="fa fa-plus"> </span>
+              <h3>Photo Title Here.</h3>
+            </div>
+          </div>
+          <div class="items">
+            <div class="img">
+              <img src="images/gallery-4.png" alt="">
+            </div>
+            <div class="overlay">
+              <span class="fa fa-plus"> </span>
+              <h3>Photo Title Here.</h3>
+            </div>
+          </div>
+          <div class="items">
+            <div class="img">
+              <img src="images/gallery-3.png" alt="">
+            </div>
+            <div class="overlay">
+              <span class="fa fa-plus"> </span>
+              <h3>Photo Title Here.</h3>
+            </div>
+          </div>
+          <div class="items">
+            <div class="img">
+              <img src="images/gallery-1.png" alt="">
+            </div>
+            <div class="overlay">
+              <span class="fa fa-plus"> </span>
+              <h3>Photo Title Here.</h3>
+            </div>
+          </div>
+          <div class="items">
+            <div class="img">
+              <img src="images/gallery-6.png" alt="">
+            </div>
+            <div class="overlay">
+              <span class="fa fa-plus"> </span>
+              <h3>Photo Title Here.</h3>
+            </div>
           </div>
         </div>
-
-        <div class="items">
-          <div class="img">
-            <img src="images/gallery-2.png" alt="">
-          </div>
-          <div class="overlay">
-            <span class="fa fa-plus"> </span>
-            <h3 data-description="Descripción de la imagen 2">Título de la foto aquí</h3>
-          </div>
-        </div>
-
-        <div class="items">
-          <div class="img">
-            <img src="images/gallery-3.png" alt="">
-          </div>
-          <div class="overlay">
-            <span class="fa fa-plus"> </span>
-            <h3 data-description="Descripción de la imagen 3">Título de la foto aquí</h3>
-          </div>
-        </div>
-
-        <div class="items">
-          <div class="img">
-            <img src="images/gallery-4.png" alt="">
-          </div>
-          <div class="overlay">
-            <span class="fa fa-plus"> </span>
-            <h3 data-description="Descripción de la imagen 4">Título de la foto aquí</h3>
-          </div>
-        </div>
-
-        <div class="items">
-          <div class="img">
-            <img src="images/gallery-5.png" alt="">
-          </div>
-          <div class="overlay">
-            <span class="fa fa-plus"> </span>
-            <h3 data-description="Descripción de la imagen 5">Título de la foto aquí</h3>
-          </div>
-        </div>
-
-        <div class="items">
-          <div class="img">
-            <img src="images/gallery-6.png" alt="">
-          </div>
-          <div class="overlay">
-            <span class="fa fa-plus"> </span>
-            <h3 data-description="Descripción de la imagen 6">Título de la foto aquí</h3>
-          </div>
-        </div>
-
       </div>
-    </div>
+    </section> 
 
-    <div id="imageDescriptionPopup" style="display: none;">
-      <div id="descriptionContent"></div>
-      <button onclick="closePopup()">Cerrar</button>
-    </div>
 
     <script>
-      // Función para mostrar la ventana emergente con la descripción
-      function showPopup(description) {
-        var popup = document.getElementById('imageDescriptionPopup');
-        var content = document.getElementById('descriptionContent');
-        content.innerHTML = description;
-        popup.style.display = 'block';
-      }
-
-      // Función para cerrar la ventana emergente
-      function closePopup() {
-        var popup = document.getElementById('imageDescriptionPopup');
-        popup.style.display = 'none';
-      }
-
-      // Agrega el manejador de eventos de clic a los títulos
-      document.querySelectorAll('.overlay h3').forEach(function(title) {
-        title.addEventListener('click', function() {
-          // Obtiene la descripción desde el atributo data-description
-          var description = this.getAttribute('data-description');
-          showPopup(description);
-        });
-      });
-    </script>
-
-
-  <script> // script que se usa para crear un carrusel
-    $('.owl-carousel1').owlCarousel({
-      loop: true,
-      margin: 0,
-      nav: false,
-      dots: false,
-      autoplay: true,
-      autoplayTimeout: 1000,
-      autoplayHoverPause: true,
-      responsive: {
-        0: {
-          items: 1
-        },
-        768: {
-          items: 4,
-        },
-        1000: {
-          items: 6
+      $('.owl-carousel2').owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: true, // Habilitar la navegación
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 1000,
+        autoplayHoverPause: true,
+        navText: [
+          '<i class="fa fa-chevron-left"></i>',
+          '<i class="fa fa-chevron-right"></i>'
+        ],
+        responsive: {
+          0: {
+            items: 1
+          },
+          768: {
+            items: 4,
+          },
+          1000: {
+            items: 6
+          }
         }
-      }
-    })
-  </script>
-
+      })
+    </script>
 
   <section class="services top"> <!-- services es una sección que contiene los servicios del hotel -->
     <div class="container">
