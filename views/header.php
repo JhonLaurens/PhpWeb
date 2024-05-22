@@ -11,7 +11,7 @@
           <li><a href="#contact">contactanos</a> </li>
           <li> <i class="fa fa-search"></i> </li>
           <li> <button class="primary-btn">Iniciar Sesión</button> </li>
-          <li> <button class="primary-btn">Registrarse</button> </li><!-- primary-btn es una clase que se usa para dar estilo a los botones -->
+          <a href="views/registro.php"><button class="primary-btn">Registrarse</button></a><!-- primary-btn es una clase que se usa para dar estilo a los botones -->
         </ul>
         <span class="fa fa-bars" onclick="menutoggle()"></span> <!-- fa fa-bars es una clase que se usa para mostrar el icon de las barras -->
       </div>

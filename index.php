@@ -15,7 +15,7 @@
 <body>
 
 <!--llamar header.php-->
-<?php include 'header.php'; ?>
+<?php include './views/header.php'; ?>
 
 <main>
 <script>
@@ -643,7 +643,7 @@
 
 <!--llamar footer.php-->
 
-<?php include 'footer.php'; ?>
+<?php include './views/footer.php'; ?>
 
 
 </body>
