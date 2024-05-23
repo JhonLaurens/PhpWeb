@@ -65,5 +65,24 @@ class UsuarioModelo {
         }
         return $result;
     }
+
+    //metodo para validar email y contraseña
+
+    public function validarUsuario($email, $contrasena) {
+        $sql = "SELECT * FROM usuarios WHERE email = '$email' AND contraseña = '$contrasena'";
+        $usuario = $this->db->query($sql);
+        $result = false;
+        if($usuario && $usuario->num_rows == 1){
+            $result = $usuario->fetch_object();
+        }
+        return $result;
+    }
+    
+    
+    
+    
+
+    
 }
+    
 ?>

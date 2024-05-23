@@ -240,6 +240,7 @@ img[src="images/banner-3.png"] {
 /*--------header---------*/
 /*--------home---------*/
 .home {
+  color: #fff;
   margin-bottom: 20px; /* Ajusta este valor según tus necesidades */
 }
 
@@ -282,8 +283,7 @@ img[src="images/banner-3.png"] {
   top: 40%;
   height: 50px;
   width: 50px;
-  background: rgba(0, 0, 0, 0.5) !important;
-  color: #fff;
+  background: #7fc142 !important;
 }
 
 .owl-nav .owl-prev {
@@ -396,7 +396,7 @@ h1 {
 }
 
 .about.top {
-  margin-top: 50px;
+  margin-top: -20px;
 }
 
 /*--------about---------*/
@@ -407,14 +407,15 @@ h1 {
   background-repeat: no-repeat;
   height: 30vh;
   width: 100%;
-  
+  color: #fff;
+  margin-top: -20px;
 }
 
 .counter .grid {
   grid-template-columns: repeat(4, 1fr);
   text-align: center;
   place-items: center;
-  padding-top: 60px;
+  padding-top: 30px;
 }
 
 .counter h1 {
@@ -428,6 +429,8 @@ h1 {
   height: 2px;
   border: none;
 }
+
+
 
 /*--------counter---------*/
 /*--------rooms---------*/
@@ -874,6 +877,7 @@ footer label {
   
   .owl-carousel .owl-prev, .owl-carousel .owl-next {
     position: absolute; /* Posiciona las flechas de forma absoluta */
+    background-color: #7fc142 ;
   }
   
   .owl-carousel .owl-prev {

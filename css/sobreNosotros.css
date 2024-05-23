@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif; /* Asegúrate de cambiar esto a la fuente que estás utilizando */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+header {
+    background-color: #f8f9fa; /* Asegúrate de cambiar esto al color que estás utilizando */
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #343a40; /* Asegúrate de cambiar esto al color que estás utilizando */
+}
+
+p {
+    color: #6c757d; /* Asegúrate de cambiar esto al color que estás utilizando */
+}
+
+main {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seccion-vision,
+.seccion-mision,
+.seccion-valores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 90%;
+    max-width: 800px;
+}
+
+.seccion-vision img,
+.seccion-mision img,
+.seccion-valores img {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.seccion-vision h2,
+.seccion-mision h2,
+.seccion-valores h2 {
+    color: #007bff; /* Asegúrate de cambiar esto al color que estás utilizando */
+}
+
+footer {
+    background-color: #f8f9fa; /* Asegúrate de cambiar esto al color que estás utilizando */
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}

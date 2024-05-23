@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Paradise Hotel</title>
-  <link rel="icon" href="./images/logo.png">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="../images/logo.png">
+  <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous"
     referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
@@ -15,7 +15,7 @@
 <body>
 
 <!--llamar header.php-->
-<?php include './views/header.php'; ?>
+<?php include '../views/headerHome.php'; ?>
 
 <main>
 <script>
@@ -36,20 +36,20 @@
     <div class="content">
       <div class="owl-carousel owl-theme"> <!-- owl-carousel es una clase que se usa para crear un carrusel -->
         <div class="item">
-          <img src="images/banner-1.png" alt=""> <!-- alt es un atributo que se usa para describir la imagen -->
+          <img src="../images/banner-1.png" alt=""> <!-- alt es un atributo que se usa para describir la imagen -->
           <div class="text">
           <h1>Escápate al Paraíso</h1>
           <p>¡Explora un mundo de lujo y comodidad en nuestro hotel! Reserva ahora y descubre el verdadero significado de la relajación.</p>
 
             </p>
             <div class="flex">
-              <a href="./views/sobreNosotros.php"><button class="primary-btn">DESCUBRE</button></a> <!-- primary-btn es una clase que se usa para dar estilo a los botones -->
+              <button class="primary-btn">DESCUBRE</button> <!-- primary-btn es una clase que se usa para dar estilo a los botones -->
               <button class="secondary-btn">CONTACTANOS</button> 
             </div>
           </div>
         </div>
         <div class="item"> 
-          <img src="images/banner-2.png" alt="">
+          <img src="../images/banner-2.png" alt="">
           <div class="text">
           <h1>Descubre el Lujo</h1>
           <p>¡Sumérgete en el lujo y la elegancia de nuestro hotel! Reserva tu estancia hoy y vive una experiencia inolvidable.</p>
@@ -61,7 +61,7 @@
           </div>
         </div>
         <div class="item">
-          <img src="images/banner-3.png" alt="">
+          <img src="../images/banner-3.png" alt="">
           <div class="text">
           <h1>Relájate y Disfruta</h1>
           <p>¡Haz una pausa en la rutina y déjate mimar en nuestro paraíso! Reserva ahora y vive momentos de pura tranquilidad.</p>
@@ -118,10 +118,10 @@
           <h2>Hotel Paradise</h2>
         </div>
         <p>¡Bienvenido al lugar donde los sueños se hacen realidad y los momentos se convierten en recuerdos eternos! En ParadiseHotel, estamos comprometidos a brindarte una experiencia inolvidable llena de lujo, comodidad y hospitalidad excepcional. Deja que nuestros paisajes impresionantes y nuestro servicio impecable te guíen hacia una escapada rejuvenecedora y llena de alegría. ¡Tu aventura comienza aquí!</p>
-        <a href="./views/sobreNosotros.php"><button class="primary-btn">SOBRE NOSOTROS</button></a>
+        <button class="primary-btn">SOBRE NOSOTROS</button>
       </div>
       <div class="right">
-        <img src="images/about.png" alt="">
+        <img src="../images/about.png" alt="">
       </div>
     </div>
 </section>
@@ -193,7 +193,7 @@
         <div class="owl-carousel owl-carousel1 owl-theme">
           <div class="items">
             <div class="image">
-              <img src="images/room-1.png" alt="">
+              <img src="../images/room-1.png" alt="">
             </div>
             <div class="text">
               <h2>Habitación Matrimonial</h2>
@@ -214,7 +214,7 @@
           </div>
           <div class="items">
             <div class="image">
-              <img src="images/room-2.png" alt="">
+              <img src="../images/room-2.png" alt="">
             </div>
             <div class="text">
               <h2>Habitación Ejecutiva</h2>
@@ -235,7 +235,7 @@
           </div>
           <div class="items">
             <div class="image">
-              <img src="images/room-3.png" alt="">
+              <img src="../images/room-3.png" alt="">
             </div>
             <div class="text">
               <h2>Habitación Hogar</h2>
@@ -256,7 +256,7 @@
           </div>
           <div class="items">
             <div class="image">
-              <img src="images/room-4.png" alt="">
+              <img src="../images/room-4.png" alt="">
             </div>
             <div class="text">
               <h2>Habitación Campestre</h2>
@@ -277,7 +277,7 @@
           </div>
           <div class="items">
             <div class="image">
-              <img src="images/room-5.png" alt="">
+              <img src="../images/room-5.png" alt="">
             </div>
             <div class="text">
               <h2>Habitación Sencilla</h2>
@@ -298,7 +298,7 @@
           </div>
           <div class="items">
             <div class="image">
-              <img src="images/room-6.png" alt="">
+              <img src="../images/room-6.png" alt="">
             </div>
             <div class="text">
               <h2>Habitación VIP</h2>
@@ -319,7 +319,7 @@
           </div>
           <div class="items">
             <div class="image">
-              <img src="images/room-7.png" alt="">
+              <img src="../images/room-7.png" alt="">
             </div>
             <div class="text">
               <h2>Habitación Familiar</h2>
@@ -340,7 +340,7 @@
           </div>
           <div class="items">
             <div class="image">
-              <img src="images/room-8.png" alt="">
+              <img src="../images/room-8.png" alt="">
             </div>
             <div class="text">
               <h2>Habitación Tranquilidad</h2>
@@ -400,7 +400,7 @@
         <div class="owl-carousel owl-carousel2 owl-theme">
           <div class="items">
             <div class="img">
-              <img src="images/gallery-1.png" alt="">
+              <img src="../images/gallery-1.png" alt="">
             </div>
             <div class="overlay">
               <span class="fa fa-plus"> </span>
@@ -409,7 +409,7 @@
           </div>
           <div class="items">
             <div class="img">
-              <img src="images/gallery-2.png" alt="">
+              <img src="../images/gallery-2.png" alt="">
             </div>
             <div class="overlay">
               <span class="fa fa-plus"> </span>
@@ -418,7 +418,7 @@
           </div>
           <div class="items">
             <div class="img">
-              <img src="images/gallery-3.png" alt="">
+              <img src="../images/gallery-3.png" alt="">
             </div>
             <div class="overlay">
               <span class="fa fa-plus"> </span>
@@ -427,7 +427,7 @@
           </div>
           <div class="items">
             <div class="img">
-              <img src="images/gallery-4.png" alt="">
+              <img src="../images/gallery-4.png" alt="">
             </div>
             <div class="overlay">
               <span class="fa fa-plus"> </span>
@@ -436,7 +436,7 @@
           </div>
           <div class="items">
             <div class="img">
-              <img src="images/gallery-5.png" alt="">
+              <img src="../images/gallery-5.png" alt="">
             </div>
             <div class="overlay">
               <span class="fa fa-plus"> </span>
@@ -445,7 +445,7 @@
           </div>
           <div class="items">
             <div class="img">
-              <img src="images/gallery-6.png" alt="">
+              <img src="../images/gallery-6.png" alt="">
             </div>
             <div class="overlay">
               <span class="fa fa-plus"> </span>
@@ -454,7 +454,7 @@
           </div>
           <div class="items">
             <div class="img">
-              <img src="images/gallery-4.png" alt="">
+              <img src="../images/gallery-4.png" alt="">
             </div>
             <div class="overlay">
               <span class="fa fa-plus"> </span>
@@ -463,7 +463,7 @@
           </div>
           <div class="items">
             <div class="img">
-              <img src="images/gallery-3.png" alt="">
+              <img src="../images/gallery-3.png" alt="">
             </div>
             <div class="overlay">
               <span class="fa fa-plus"> </span>
@@ -472,7 +472,7 @@
           </div>
           <div class="items">
             <div class="img">
-              <img src="images/gallery-1.png" alt="">
+              <img src="../images/gallery-1.png" alt="">
             </div>
             <div class="overlay">
               <span class="fa fa-plus"> </span>
@@ -481,7 +481,7 @@
           </div>
           <div class="items">
             <div class="img">
-              <img src="images/gallery-6.png" alt="">
+              <img src="../images/gallery-6.png" alt="">
             </div>
             <div class="overlay">
               <span class="fa fa-plus"> </span>
@@ -557,7 +557,7 @@
           </div>
         </div>
         <div class="right">
-          <img src="images/service.png" alt="">
+          <img src="../images/service.png" alt="">
         </div>
       </div>
     </div>
@@ -613,7 +613,7 @@
 
 <!--llamar footer.php-->
 
-<?php include './views/footer.php'; ?>
+<?php include '../views/footer.php'; ?>
 
 
 </body>
