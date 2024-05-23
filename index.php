@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Paradise Hotel</title>
   <link rel="icon" href="./images/logo.png">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous"
     referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
@@ -110,25 +110,6 @@
 
 
 
-  <section class="book"> <!-- book es una sección que contiene el formulario de reserva -->
-    <div class="container flex_space">
-      <div class="text">
-        <h1> <span>Book </span> Your Rooms </h1>
-      </div>
-      <div class="form">
-        <form class="grid">
-          <input type="date" placeholder="Araival Date">
-          <input type="date" placeholder="Departure Date">
-          <input type="number" placeholder="Adults">
-          <input type="number" placeholder="Childern">
-          <input type="submit" value="CHECK AVAILABILITY">
-        </form>
-      </div>
-    </div>
-  </section>
-
-
-
   <section class="about top"> <!-- about es una sección que contiene información sobre el hotel -->
     <div class="container flex">
       <div class="left">
@@ -144,6 +125,8 @@
       </div>
     </div>
 </section>
+
+
 
 
   <section class="counter top"> <!-- counter es una sección que contiene información sobre el hotel -->
@@ -621,19 +604,6 @@
       }
     })
   </script>
-
-
-
-  
-
-  <section class="newsletter mtop"> <!-- newsletter es una sección que contiene el formulario de suscripción -->
-    <div class="container flex_space">
-      <h1>Subscribe to Our Newsletter</h1>
-      <input type="text" placeholder="Your Email">
-      <input type="text" value="Subscribe">
-    </div>
-  </section>
-
  
   
 

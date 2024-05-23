@@ -38,7 +38,7 @@
   </footer>
 
   <div class="legal"> <!-- legal es una sección que contiene la información legal -->
-    <p class="container">Copyright (c) 2024 Copyright Holder All Rights Reserved.</p>
+    <p class="container">copyright © 2024 Copyright Holder All Rights Reserved.</p>
   </div>
 
 

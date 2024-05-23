@@ -240,8 +240,7 @@ img[src="images/banner-3.png"] {
 /*--------header---------*/
 /*--------home---------*/
 .home {
-    height: 100vh;
-    color: #fff;
+  margin-bottom: 20px; /* Ajusta este valor según tus necesidades */
 }
 
 .home img {
@@ -352,9 +351,7 @@ h1 {
   padding: 30px;
 }
 
-.top {
-  margin-top: 80px;
-}
+
 
 .mtop {
   margin-top: 40px;
@@ -382,7 +379,8 @@ h1 {
 
 .about {
   position: relative;
-  margin-top: 1px;
+  margin-top: 10px;
+  
 }
 
 .about .left {
@@ -397,6 +395,10 @@ h1 {
   margin: 30px 0;
 }
 
+.about.top {
+  margin-top: 50px;
+}
+
 /*--------about---------*/
 /*--------counter---------*/
 .counter {
@@ -405,7 +407,7 @@ h1 {
   background-repeat: no-repeat;
   height: 30vh;
   width: 100%;
-  color: #fff;
+  
 }
 
 .counter .grid {
