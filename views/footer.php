@@ -2,14 +2,22 @@
     <div class="container grid">
       <div class="box">
         <img class="logo-footer" src="./images/logo.png" alt="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+        <div class="box">
+          <h2>Servicios del Hotel</h2>
+          <h3>Delicious Food</h3>
+          <p>Disfruta de una experiencia gastronómica excepcional con una variedad de platos deliciosos preparados por nuestros chefs de clase mundial.</p>
+          <h3>Aptitud física</h3>
+          <p>Mantente en forma durante tu estancia en nuestro gimnasio totalmente equipado, con equipos de última generación y entrenadores profesionales disponibles.</p>
+          <h3>Restaurante interno</h3>
+          <p>Saborea la comodidad de comer en nuestro restaurante interno, que ofrece una amplia selección de comidas gourmet, desde desayuno hasta cena, en un ambiente acogedor y elegante.</p>
+          <h3>Beauty Spa</h3>
+          <p>Relájate y rejuvenece con nuestros tratamientos de spa y servicios de bienestar, diseñados para revitalizar tu cuerpo y mente.</p>
+        </div>
         <div class="icon"> <!-- icon es un contenedor que contiene los iconos de las redes sociales -->
-          <i class="fa fa-facebook-f"></i>
-          <i class="fa fa-instagram"></i>
-          <i class="fa fa-twitter"></i>
-          <i class="fa fa-youtube"></i>
+          <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+          <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a>
         </div>
       </div>
 
@@ -25,14 +33,13 @@
 
       <div class="box"> <!-- box es un contenedor que contiene los enlaces -->
         <h2>Contact Us</h2>
-        <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.
-        </p>
+        <p>Estamos ubicados en el corazón de Medellín, Colombia. No dudes en contactarnos.</p>
         <i class="fa fa-location-dot"></i>
-        <label>1201 park street, Avenue, Dhanmondy, Dhaka. </label> <br>
+        <label>Calle 10 #42-45, Poblado, Medellín, Colombia</label> <br>
         <i class="fa fa-phone"></i>
-        <label>[88] 657 524 332</label> <br>
+        <label>+57 4 444 44 44</label> <br>
         <i class="fa fa-envelope"></i>
-        <label>info@dentar.com</label> <br>
+        <label>info@hotelparadise.com</label> <br>
       </div>
     </div>
   </footer>

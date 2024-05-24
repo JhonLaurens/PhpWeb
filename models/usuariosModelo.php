@@ -57,32 +57,28 @@ class UsuarioModelo {
     }
 
     public function guardarUsuario() {
-        $sql = "INSERT INTO usuarios VALUES(NULL, '{$this->getNombre()}', '{$this->getEmail()}', '{$this->getContrasena()}', '{$this->getTipoUsuario()}');";
-        $guardar = $this->db->query($sql);
-        $result = false;
-        if($guardar){
-            $result = true;
-        }
+        $sql = "INSERT INTO usuarios VALUES(NULL, ?, ?, ?, ?)";
+        $stmt = $this->db->prepare($sql);
+        $contrasena = password_hash($this->getContrasena(), PASSWORD_DEFAULT);
+        $stmt->bind_param("ssss", $this->getNombre(), $this->getEmail(), $contrasena, $this->getTipoUsuario());
+
+        $result = $stmt->execute();
         return $result;
     }
 
-    //metodo para validar email y contraseña
-
-    public function validarUsuario($email, $contrasena) {
-        $sql = "SELECT * FROM usuarios WHERE email = '$email' AND contraseña = '$contrasena'";
-        $usuario = $this->db->query($sql);
-        $result = false;
-        if($usuario && $usuario->num_rows == 1){
-            $result = $usuario->fetch_object();
+    public function verificarUsuario($email, $contrasena) {
+        $sql = "SELECT * FROM usuarios WHERE email = ?";
+        $stmt = $this->db->prepare($sql);
+        $stmt->bind_param('s', $email);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $usuario = $result->fetch_assoc();
+        
+        if ($usuario && password_verify($contrasena, $usuario['contrasena'])) {
+            return $usuario;
+        } else {
+            return false;
         }
-        return $result;
     }
-    
-    
-    
-    
-
-    
 }
-    
 ?>

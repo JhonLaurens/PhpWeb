@@ -1,22 +1,19 @@
 <header>
-    <div class="content flex_space"><!-- flex_space significa que los elementos se distribuyen de manera uniforme en el contenedor -->
+    <div class="content flex_space">
       <div class="logo">
-        <img src="images/logo.png" alt=""> <!-- alt es un atributo que se usa para describir la imagen -->
+        <img src="images/logo.png" alt="">
       </div>
-      <div class="navlinks"><!-- navlinks es un contenedor que contiene los elementos de navegación -->
+      <div class="navlinks">
         <ul id="menulist">
           <li><a href="views/inicioSesion.php">inicio</a></li>
           <li><a href="#about">sobre nosotros</a> </li>
           <li><a href="#rooms">habitaciones</a> </li>
-          <li><a href="#contact">contactanos</a> </li>
+          <li><a href="views/contactenos.php">contactanos</a> </li> <!-- Modificado aquí -->
           <li> <i class="fa fa-search"></i> </li>
           <a href="views/inicioSesion.php"><button class="primary-btn">Iniciar sesión</button></a>
-          <a href="views/registro.php"><button class="primary-btn">Registrarse</button></a><!-- primary-btn es una clase que se usa para dar estilo a los botones -->
+          <a href="views/registro.php"><button class="primary-btn">Registrarse</button></a>
         </ul>
-        <span class="fa fa-bars" onclick="menutoggle()"></span> <!-- fa fa-bars es una clase que se usa para mostrar el icon de las barras -->
+        <span class="fa fa-bars" onclick="menutoggle()"></span>
       </div>
     </div>
 </header>
- 
-
-

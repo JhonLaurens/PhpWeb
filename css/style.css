@@ -1036,3 +1036,14 @@ footer label {
     font-size: 18px; /* Reduce el tamaño del texto para los títulos y etiquetas */
   }
 }
+
+.legal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.legal a {
+  text-decoration: none;
+  color: #b6b7b9;
+}
